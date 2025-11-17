@@ -52,7 +52,7 @@ class FamilyStructure:
     def delete_member(self, id):
         ## You have to implement this method
         ## Loop the list and delete the member with the given id
-        for i in range(0,len(self._members)-1):
+        for i in range(0,len(self._members)):
             if self._members[i]["id"]== id:
                 del self._members[i]
                 break
@@ -65,7 +65,7 @@ class FamilyStructure:
     def get_member(self, id):
         ## You have to implement this method
         ## Loop all the members and return the one with the given id
-        for i in range(0,len(self._members)-1):
+        for i in range(0,len(self._members)):
 
             if self._members[i]["id"]== id:
                 return self._members[i]
